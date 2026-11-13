@@ -1,0 +1,109 @@
+{
+  "uid": "alert-list-reproduction",
+  "title": "Alert list reproduction",
+  "schemaVersion": 39,
+  "version": 1,
+  "editable": true,
+  "refresh": "",
+  "tags": [],
+  "time": {
+    "from": "now-1h",
+    "to": "now"
+  },
+  "timepicker": {
+    "hidden": true
+  },
+  "templating": {
+    "list": []
+  },
+  "links": [],
+  "panels": [
+    {
+      "id": 1,
+      "type": "alertlist",
+      "title": "Stat: zero alerts",
+      "gridPos": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 4
+      },
+      "options": {
+        "viewMode": "stat",
+        "groupMode": "default",
+        "showInstances": false,
+        "maxItems": 20,
+        "sortOrder": 3,
+        "dashboardAlerts": false,
+        "showInactiveAlerts": false,
+        "alertName": "no-matching-alert",
+        "stateFilter": {
+          "firing": true,
+          "pending": true,
+          "recovering": true,
+          "noData": true,
+          "normal": false,
+          "error": true
+        }
+      }
+    },
+    {
+      "id": 3,
+      "type": "alertlist",
+      "title": "Stat: one alert",
+      "gridPos": {
+        "x": 8,
+        "y": 0,
+        "w": 8,
+        "h": 4
+      },
+      "options": {
+        "viewMode": "stat",
+        "groupMode": "default",
+        "showInstances": false,
+        "maxItems": 20,
+        "sortOrder": 3,
+        "dashboardAlerts": false,
+        "showInactiveAlerts": false,
+        "alertName": "Example alert",
+        "stateFilter": {
+          "firing": true,
+          "pending": true,
+          "recovering": true,
+          "noData": true,
+          "normal": false,
+          "error": true
+        }
+      }
+    },
+    {
+      "id": 2,
+      "type": "alertlist",
+      "title": "List: zero alerts",
+      "gridPos": {
+        "x": 16,
+        "y": 0,
+        "w": 8,
+        "h": 4
+      },
+      "options": {
+        "viewMode": "list",
+        "groupMode": "default",
+        "showInstances": false,
+        "maxItems": 20,
+        "sortOrder": 3,
+        "dashboardAlerts": false,
+        "showInactiveAlerts": false,
+        "alertName": "no-matching-alert",
+        "stateFilter": {
+          "firing": true,
+          "pending": true,
+          "recovering": true,
+          "noData": true,
+          "normal": false,
+          "error": true
+        }
+      }
+    }
+  ]
+}
